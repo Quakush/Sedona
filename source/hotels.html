@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sedona</title>
+</head>
+<body>
+
+  <header class="main-header">
+    <nav class="main-header__nav main-nav">
+      <a class="main-nav__logo" href="index.html">
+        <img src="./img/logo.png" width="140" height="72" alt="logo">
+      </a>
+      <ul class="main-nav__menu">
+        <li><a href="#" class="main-nav__link">Информация</a></li>
+        <li><a href="#" class="main-nav__link">Фото и видео</a></li>
+        <li><a href="#" class="main-nav__link">Карта штата</a></li>
+        <li><a class="main-nav__link main-nav__link--current">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="filter"></section>
+
+    <section class="catalog">
+      <h2 class="visually-hidden">Каталог гостиниц</h2>
+      <div class="catalog__header sort">
+        <h3>Найдено:<span>3</span></h3>
+        <h4>Сортировка:</h4>
+        <ul class="sort__list">
+          <li>
+            <a class="sort__link sort__link--active" href="#">По цене</a>
+            <a class="sort__link" href="#">По типу</a>
+            <a class="sort__link" href="#">По рейтингу</a>
+          </li>
+        </ul>
+        <ul class="sort__range">
+          <li><a href="#">
+            <img src="./img/icon-up.png" width="11" height="10" alt="up">
+          </a></li>
+          <li><a href="#">
+            <img src="./img/icon-down.png" width="11" height="10" alt="down">
+          </a></li>
+        </ul>
+      </div>
+      <ul class="catalog__list">
+        <li>
+          <article class="catalog__item">
+            <img src="./img/cat1.png" width="135" height="90">
+            <div class="catalog__description">
+              <h3>Amara resort & spa</h3>
+              <p>
+                <span>Гостиница</span>
+                <span>от 4000 р.</span>
+              </p>
+              <a class="btn btn--blue" href="#">Подробнее</a>
+              <a class="btn btn--brown" href="#">Забронировать</a>
+            </div>
+            <div class="catalog__rating">
+              <p>Рейтинг:<span>8,5</span></p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="catalog__item">
+            <img src="./img/cat2.png" width="135" height="90">
+            <div class="catalog__description">
+              <h3>Desert Quail Inn</h3>
+              <p>
+                <span>Мотель</span>
+                <span>от 3000 р.</span>
+              </p>
+              <a class="btn btn--blue" href="#">Подробнее</a>
+              <a class="btn btn--brown" href="#">Забронировать</a>
+            </div>
+            <div class="catalog__rating">
+              <p>Рейтинг:<span>8,9</span></p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="catalog__item">
+            <img src="./img/cat3.png" width="135" height="90">
+            <div class="catalog__description">
+              <h3>Villas at Poco Diablo</h3>
+              <p>
+                <span>Апартаменты</span>
+                <span>от 2000 р.</span>
+              </p>
+              <a class="btn btn--blue" href="#">Подробнее</a>
+              <a class="btn btn--brown" href="#">Забронировать</a>
+            </div>
+            <div class="catalog__rating">
+              <p>Рейтинг:<span>9,2</span></p>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <p class="main-footer__hashtag">#visitsedona</p>
+    <div class="main-footer__social social">
+      <ul class="social__list">
+        <li>
+          <a href="#" class="social__link social__link--tw" aria-label="twitter"></a>
+        </li>
+        <li>
+          <a href="#" class="social__link social__link--fb" aria-label="facebook"></a>
+        </li>
+        <li>
+          <a href="#" class="social__link social__link--yt" aria-label="youtube"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p>website by</p>
+      <img src="./img/logo_name.png" width="115" height="41">
+    </div>
+  </footer>
+</body>
+</html>
