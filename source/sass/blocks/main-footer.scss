@@ -1,0 +1,21 @@
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.main-footer__hashtag {
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.main-footer__copyright {
+  display: flex;
+  align-items: center;
+  width: 240px;
+  color: #000;
+  text-transform: uppercase;
+}

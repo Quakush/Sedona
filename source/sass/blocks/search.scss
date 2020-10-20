@@ -1,0 +1,29 @@
+.search {
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+
+  & h2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+  }
+
+  & p {
+    text-transform: uppercase;
+  }
+}
+
+.search__btn {
+  padding: 20px 140px;
+}
+
+.search__form {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 570px;
+  background-color: #fff;
+}

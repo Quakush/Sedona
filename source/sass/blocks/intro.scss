@@ -1,0 +1,23 @@
+.intro {
+  padding-top: 807px;
+  background-color: #fff;
+  background-image: url("../img/intro.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  & h2 {
+    width: 576px;
+    margin: 0 auto;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  & p {
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

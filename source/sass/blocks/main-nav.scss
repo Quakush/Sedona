@@ -1,0 +1,37 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main-nav__menu {
+  @include reset-list;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 20px 0;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $blue-color;
+  }
+
+  &:active {
+    color: #000;
+    opacity: 0.3;
+  }
+}

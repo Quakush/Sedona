@@ -1,0 +1,33 @@
+.btn {
+  font-family: $font-text;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s;
+  border: none;
+
+  &--blue {
+    background-color: $blue-color;
+
+    &:hover,
+    &:focus {
+      background-color: #669ec0;
+    }
+  }
+
+  &--brown {
+    background-color: $brown-color;
+
+    &:hover,
+    &:focus {
+      background-color: #604e43;
+    }
+  }
+
+  &:active {
+    filter: brightness(0.7);
+  }
+}

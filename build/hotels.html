@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sedona</title>
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
 
@@ -23,7 +24,49 @@
 
   <main>
 
-    <section class="filter"></section>
+    <section class="filter">
+      <div class="filter__check">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <label>
+            <input type="checkbox" name="pool"> Бассейн
+          </label>
+          <label>
+            <input type="checkbox" name="parking"> Парковка
+          </label>
+          <label>
+            <input type="checkbox" name="wi-fi"> wi-fi
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <label>
+            <input type="checkbox" name="hotel"> Гостиница
+          </label>
+          <label>
+            <input type="checkbox" name="motel"> Мотель
+          </label>
+          <label>
+            <input type="checkbox" name="palace"> Апартаменты
+          </label>
+        </fieldset>
+      </div>
+      <div class="filter__range">
+        <fieldset>
+          <legend>Стоимость в сутки:</legend>
+          <div class="filter__box">
+            <input type="text" name="from" placeholder="от 0">
+            <input type="text" name="to" placeholder="до 3000">
+          </div>
+          <div class="filter__line">
+            <div class="filter__result"></div>
+            <div class="filter__min"></div>
+            <div class="filter__max"></div>
+          </div>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </div>
+    </section>
 
     <section class="catalog">
       <h2 class="visually-hidden">Каталог гостиниц</h2>
