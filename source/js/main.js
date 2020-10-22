@@ -1,4 +1,3 @@
-
 'use strict';
 
 var searchBtn = document.querySelector('.search__btn');

@@ -1,4 +1,3 @@
-
 'use strict';
 
 var searchBtn = document.querySelector('.search__btn');
@@ -9,7 +8,6 @@ console.log(form);
 
 searchBtn.addEventListener('click', function (evt) {
   evt.preventDefault();
-console.log(dfbgdg);
   if (form.classList.contains('hidden')) {
     form.classList.remove('hidden');
   }
