@@ -1,9 +1,11 @@
 .search {
   position: relative;
+  padding: 26px 0 0;
   background-color: #fff;
   text-align: center;
 
   & h2 {
+    margin-bottom: 20px;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -12,12 +14,13 @@
   }
 
   & p {
+    margin-bottom: 46px;
     text-transform: uppercase;
   }
 }
 
 .search__btn {
-  padding: 20px 140px;
+  padding: 30px 140px;
 }
 
 .search__form {
@@ -26,4 +29,5 @@
   transform: translateX(-50%);
   width: 570px;
   background-color: #fff;
+  z-index: 100;
 }

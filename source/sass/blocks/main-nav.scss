@@ -16,9 +16,20 @@
   justify-content: space-between;
 }
 
+.main-nav__menu li {
+
+  &:nth-child(2) {
+  margin-left: -15px;
+  }
+
+  &:nth-child(3) {
+    margin-left: 220px;
+  }
+}
+
 .main-nav__link {
   display: block;
-  padding: 20px 0;
+  padding: 15px 0;
   font-weight: 700;
   color: #000;
   text-transform: uppercase;

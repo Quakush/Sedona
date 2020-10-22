@@ -1,0 +1,180 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 62px 0;
+  background-image: url("../img/filter.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 5%;
+
+  & fieldset {
+    border: none;
+  }
+
+  & legend {
+    margin-bottom: 18px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  & label {
+    padding: 5px 0;
+    padding-left: 36px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+}
+
+.filter__check {
+  display: flex;
+  width: 50%;
+
+  & fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+  }
+
+  & ul {
+    @include reset-list;
+  }
+
+  & li {
+    margin-bottom: 20px;
+  }
+}
+
+.filter input[type=checkbox] {
+  display: none;
+}
+
+.filter input[type=checkbox] + label {
+  background-image: url("../img/sprite/icon-checkbox-off.svg");
+}
+
+.filter input[type=checkbox]:checked + label {
+  background-image: url("../img/sprite/icon-checkbox-on.svg");
+}
+
+.filter__range {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 340px;
+
+  & legend {
+    margin-bottom: 7px;
+  }
+
+  & button {
+    padding: 5px 30px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: #000;
+      background-color: #fff;
+    }
+  }
+}
+
+.filter__box {
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+  border: 2px solid #000;
+
+  & input {
+    padding: 5px 0;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 400;
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 20px;
+    top: 20%;
+    left: 50%;
+    background-color: #000;
+  }
+}
+
+.filter__line {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 22px;
+  background-color: #9c8684;
+}
+
+.filter__result {
+  width: 80.4%;
+  height: 2px;
+  background-color: #fff;
+}
+
+.filter__min,
+.filter__max {
+  position: absolute;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 9px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #9c8684;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.filter__min {
+  left: 0;
+}
+
+.filter__max {
+  left: 80.4%;
+}

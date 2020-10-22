@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 24px 55px 24px 135px;
   background-color: #fff;
 }
 
@@ -18,4 +19,18 @@
   width: 240px;
   color: #000;
   text-transform: uppercase;
+
+  & a {
+    margin-left: 5px;
+  }
+}
+
+.main-footer__copyright a:hover svg,
+.main-footer__copyright a:focus svg {
+  fill: $blue-color;
+}
+
+.main-footer__copyright a:active svg {
+  fill: #000;
+  opacity: 0.4;
 }

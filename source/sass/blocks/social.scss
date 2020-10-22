@@ -13,6 +13,7 @@
   background-color: $blue-color;
   background-repeat: no-repeat;
   background-position: center;
+  transition: all 0.3s;
 
   &--tw {
     background-image: url("../img/sprite/icon-twitter.svg");
@@ -24,6 +25,15 @@
 
   &--yt {
     background-image: url("../img/sprite/icon-youtube.svg");
+  }
+
+  &:hover,
+  &:active {
+    background-color: #669dc0;
+  }
+
+  &:active {
+    filter: brightness(0.7);
   }
 }
 

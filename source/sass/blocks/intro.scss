@@ -1,13 +1,15 @@
 .intro {
-  padding-top: 807px;
+  padding-top: 568px;
+  padding-bottom: 50px;
   background-color: #fff;
   background-image: url("../img/intro.png");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center -83px;
 
   & h2 {
     width: 576px;
     margin: 0 auto;
+    margin-bottom: 28px;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
@@ -17,6 +19,7 @@
   }
 
   & p {
+    margin-bottom: 0;
     text-align: center;
     text-transform: uppercase;
   }

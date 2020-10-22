@@ -1,0 +1,8 @@
+.catalog__list {
+  @include reset-list;
+}
+
+.catalog__item {
+  margin-bottom: 1px;
+  background-color: #fff;
+}

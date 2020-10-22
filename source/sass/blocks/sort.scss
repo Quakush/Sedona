@@ -1,0 +1,70 @@
+.sort {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 72px 8px;
+
+  & h3 {
+    margin-right: 48px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  & h4 {
+    margin-right: 40px;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+}
+
+.sort__list {
+  @include reset-list;
+}
+
+.sort__link {
+  margin-right: 28px;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  opacity: 0.3;
+  transition: all 0.3s;
+  border-bottom: 1px dotted black;
+
+  &:hover,
+  &:focus {
+    color: $blue-color;
+    opacity: 1;
+    border-bottom: 1px dotted $blue-color;
+  }
+
+  &:active {
+    color: #000;
+    opacity: 1;
+    border-bottom: 1px dotted black;
+  }
+
+  &--active {
+    color: $blue-color;
+    opacity: 1;
+    border-bottom: none;
+  }
+}
+
+.sort__range {
+  @include reset-list;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 45px;
+  margin-left: auto;
+
+  & li {
+    margin-left: 12px;
+  }
+}

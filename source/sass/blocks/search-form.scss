@@ -1,7 +1,8 @@
 .search-form {
   display: flex;
   flex-wrap: wrap;
-  padding: 35px 55px;
+  justify-content: space-between;
+  padding: 56px 55px;
 }
 
 .search-form label,
@@ -17,23 +18,52 @@
   width: 345px;
   padding: 10px 40px 10px 12px;
   background-color: #f1f1f1;
+  background-repeat: no-repeat;
+  background-position: 98% center;
   border: none;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:focus,
+  &:active {
+    background-color: #fff;
+    outline: none;
+    box-shadow: inset 0 0 0 2px #f1f1f1;
+  }
 }
 
 .search-form__row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
+  margin-bottom: 31px;
 
-  &:nth-last-of-type(2),
-  &:last-of-type {
+  &:nth-last-of-type(2) {
     width: 50%;
+  }
+
+  &:last-of-type {
+    width: 39%;
+  }
+
+  &:first-of-type input,
+  &:nth-of-type(2) input {
+    background-image: url(../img/sprite/icon-calendar.svg);
   }
 
   &:nth-last-of-type(2) input,
   &:last-of-type input {
     width: 38px;
+    padding: 10px;
   }
+}
+
+.search-form__col {
+  display: flex;
+  justify-content: center;
 }
 
 .search-form__col button {
@@ -42,8 +72,16 @@
   width: 38px;
   height: 38px;
   border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
 }
 
 .search-form__btn {
   width: 100%;
+  margin-top: 24px;
+  padding: 16px 0 16px;
 }
